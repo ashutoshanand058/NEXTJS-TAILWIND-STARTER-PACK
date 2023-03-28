@@ -1,0 +1,64 @@
+{
+    "extends": [
+      "airbnb",
+      "airbnb/hooks"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "import/order": 0,
+      "max-len": [
+        "error",
+        {
+          "tabWidth": 2,
+          "code": 120,
+          "ignoreUrls": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }
+      ],
+      "react/prop-types": 0,
+      "react/forbid-prop-types": 0,
+      "react/require-default-props": 0,
+      "react/jsx-props-no-spreading": 0,
+      "react/function-component-definition": 0,
+      "react/display-name": 0,
+      "react/react-in-jsx-scope": 0,
+      "jsx-a11y/anchor-is-valid": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "react/jsx-filename-extension": 0,
+      "linebreak-style": ["error", "windows"],
+      "no-param-reassign": [
+        "error",
+        {
+          "props": false
+        }
+      ],
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "\\.svg","\\.css"
+          ]
+        }
+      ],
+      "import/prefer-default-export": 0,
+      "react/jsx-first-prop-new-line": 0,
+      "react/no-array-index-key": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "jsconfig": {
+                "config": "jsconfig.json"
+            }
+        }
+    }
+  }
